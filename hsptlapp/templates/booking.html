@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<form method="post" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Patient_name</label>
+    <input type="text" name="Patient_name"><br>
+    <label>Phone_number</label>
+    <input type="text" name="Phone_number"><br>
+    <label>Email_id</label>
+    <input type="text" name="Email_id"><br>
+    <label>Doctor_name</label>
+    <input type="text" name="Doctor_name"><br>
+    <label>Booking_date</label>
+    <input type="date" name="Booking_date"><br>
+    <label>Booked_on</label>
+    <input type="date" name="Booked_on"><br>
+
+    <button>submit</button>
+
+</form>
+</body>
+</html>
